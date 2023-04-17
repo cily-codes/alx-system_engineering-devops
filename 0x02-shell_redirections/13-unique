@@ -1,3 +1,0 @@
-#!/bin/bash
-sort | uniq | grep -wvFf <(echo "$(sort | uniq)" | grep -w -oF "$(sort | uniq)" | uniq -d)
-
